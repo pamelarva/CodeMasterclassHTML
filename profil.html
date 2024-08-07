@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Masterclass || Profil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleProfile.css">
+    <script src="https://kit.fontawesome.com/4592f70558.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="background-color: #e8eaff">
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="home.html"><img src="LOGO_White.png" alt="Logo" class="logo-img" /></a>
+          <a href="home.html"><h1 class="logo-title">CODEMASTERCLASS</h1></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="katalog.html"
+              role="button"
+              aria-expanded="false"
+              >Kelas</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="katalog.html">Semua Kelas</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Materi_AR.html"
+                  >Media Pembelajaran AR/VR</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="Materi_Video.html">Video & Animasi</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Materi_ASI.html"
+                  >Aplikasi Sistem Informasi</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="Materi_UI.html">UI/UX Design</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Materi_Bisnis.html">Bisnis Digital</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Materi_PG.html"
+                  >Pengembangan Game</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="Materi_Keamanan.html">Keamanan Siber</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Materi_AI.html">AI dan IOT</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Materi_Pemrograman.html">Pemrograman</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="hasilkarya.html"
+              >Karya Siswa</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="syarat.html">Syarat & Ketentuan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Panduan.html">Panduan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pertanyaan.html">FAQ</a>
+          </li>
+        </ul>
+        <div class="d-grid gap-1 d-md-flex justify-content-md-end">
+          <a href="login1.html"
+            ><button class="lgn-btn btn-primary" type="button" id="login">
+              Login/Sign Up
+            </button>
+          </a>
+        </div>
+      </nav>
+      </header>
+
+    <div class="header">
+    <h1 class="text-center">My Profile</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </div>
+
+    <!--isian profil-->
+    <div class="row">
+      <div class="col-2"></div>
+
+        <div class="col-2">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-dashboard-list" data-bs-toggle="list" href="#list-dashboard" role="tab" aria-controls="list-dashboard">Dashboard</a>
+            <a class="list-group-item list-group-item-action" id="list-myprofile-list" data-bs-toggle="list" href="#list-myprofile" role="tab" aria-controls="list-myprofile">My Profile</a>
+            <a class="list-group-item list-group-item-action" id="list-endroliedcourses-list" data-bs-toggle="list" href="#list-endroliedcourses" role="tab" aria-controls="list-endroliedcourses">Endrolied Courses</a>
+            <a class="list-group-item list-group-item-action" id="list-quiz-list" data-bs-toggle="list" href="#list-quiz" role="tab" aria-controls="list-quiz">My Quiz Attempts</a>
+
+            <hr>
+
+            <a class="list-group-item list-group-item-action" a href="home.html">Logout</a>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-dashboard" role="tabpanel" aria-labelledby="list-dashboard-list">Dashboard
+              <hr>
+              <br>
+              <div class="row justify-content-evenly">
+                <div class="col-4">
+                  <h6>Enrolled Courses</h6>
+                  <h4>1</h4>
+                </div>
+                <div class="col-4">
+                  <h6>Active Courses</h6>
+                  <h4>0</h4>
+                </div>
+                <div class="col-4">
+                  <h6>Completed Courses</h6>
+                  <h4>1</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="list-myprofile" role="tabpanel" aria-labelledby="list-myprofile-list">My Profile
+              <hr>
+              <br>
+              <div class="row justify-content-evenly">
+                <div class="col-4">
+                  <h6 style="padding: 5px;">Registration Date</h6>
+                  <h6 style="padding: 5px;">First Name</h6>
+                  <h6 style="padding: 5px;">Last Name</h6>
+                  <h6 style="padding: 5px;">Username</h6>
+                  <h6 style="padding: 5px;">Email</h6>
+                  <h6 style="padding: 5px;">Phone Number</h6>
+                  <h6 style="padding: 5px;">Bio</h6>
+                </div>
+                <div class="col-4">
+                  <h6 style="padding: 5px;">_______</h6>
+                  <h6 style="padding: 5px;">_______</h6>
+                  <h6 style="padding: 5px;">_______</h6>
+                  <h6 style="padding: 5px;">_______</h6>
+                  <h6 style="padding: 5px;">_______</h6>
+                  <h6 style="padding: 5px;">_______</h6>
+                  <h6 style="padding: 5px;">_______</h6>
+                </div>
+                <div class="col-4">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-endroliedcourses" role="tabpanel" aria-labelledby="list-endroliedcourses-list">
+              Enrolled Courses
+              <br>
+              <hr>
+
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">All Courses</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Aktive Courses</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Completed Courses</button>
+                </div>
+              </nav>
+
+
+              <!--All Courses-->
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                  <div class="card mb-3" style="max-width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="ai.jpg" class="img-fluid rounded-start" alt="">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">UI Design for Mobile Apps</h5>
+                          <p class="card-text">Di kelas ini, kamu akan mempelajari UI Design untuk sebuah Mobile Apps, mulai dari basic menggunakan software Open
+                            Source.</p>
+                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3" style="max-width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="ai5.jpg" class="img-fluid rounded-start" alt="">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">UI Design for Mobile Apps</h5>
+                          <p class="card-text">Di kelas ini, kamu akan mempelajari UI Design untuk sebuah Mobile Apps, mulai dari basic menggunakan software Open
+                            Source.</p>
+                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Aktive Courses-->
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                  <div class="card mb-3" style="max-width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="ai.jpg" class="img-fluid rounded-start" alt="">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">UI Design for Mobile Apps</h5>
+                          <p class="card-text">Di kelas ini, kamu akan mempelajari UI Design untuk sebuah Mobile Apps, mulai dari basic menggunakan software Open
+                            Source.</p>
+                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Completed Courses-->
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                  <div class="card mb-3" style="max-width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="ai5.jpg" class="img-fluid rounded-start" alt="">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">UI Design for Mobile Apps</h5>
+                          <p class="card-text">Di kelas ini, kamu akan mempelajari UI Design untuk sebuah Mobile Apps, mulai dari basic menggunakan software Open
+                            Source.</p>
+                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+           
+
+            <div class="tab-pane fade" id="list-quiz" role="tabpanel" aria-labelledby="list-quiz-list">
+              My Quiz Attempts
+              <hr>
+              <div class="card mb-3" style="max-width: 100%;" a href="#">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="vid.jpg" class="img-fluid rounded-start" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Quis 1</h5>
+                      <p class="card-text">Di kelas ini, kamu akan mempelajari UI Design untuk sebuah Mobile Apps, mulai dari basic menggunakan software Open
+                        Source.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3" style="max-width: 100%;" a href="#">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="iot.jpg" class="img-fluid rounded-start" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Quis 2</h5>
+                      <p class="card-text">Di kelas ini, kamu akan mempelajari UI Design untuk sebuah Mobile Apps, mulai dari basic menggunakan software Open
+                        Source.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-2"></div>
+    </div>
+
+    <!-- INI CS WA -->
+    <section id="contact">
+      <div class="wa">
+          <a class="wa_btn" href="https://wa.me/6281226044879"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </section>
+  <script src="scriptHome.js"></script>
+  </body>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <h3>Tentang Kami</h3>
+            <p>
+              "Code Masterclass" adalah e-course yang dirancang untuk mengajarkan
+              pemrograman secara komprehensif
+            </p>
+          </div>
+          <div class="footer-right">
+            <h3>Hubungi Kami</h3>
+            <p>Email: codemasterclass@e-course.com</p>
+            <p>Telepon: 123-456-7890</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 E-Course Code Masterclass</p>
+        </div>
+      </div>
+    </footer>
+  
+</html>

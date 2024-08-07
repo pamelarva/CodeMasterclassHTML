@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    font-family: 'Poppins', sans-serif;
+    transition: .2s linear;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e8eaff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Target dan Cocok */
+.kurikulum {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+/* LIST DROP DOWN KURIKULUM */
+.accordion {
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    border-bottom: groove;
+    color: #0C134F;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+    color: #f29727;
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background: white;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    color: #0C134F;
+    text-decoration: none;
+}
+
+.accordion .contentBx.active .content {
+    /* atur size dalam content */
+    height: 35px;
+    padding: 10px;
+    overflow: hidden;
+}

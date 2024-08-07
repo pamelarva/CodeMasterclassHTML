@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="login1.css">
+    <title>Code Masterclass || Login</title>
+    
+    
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="home.html"><img src="LOGO_White.png" alt="Logo" class="logo-img" /></a>
+            <a href="home.html"><h1 class="logo-title">CODEMASTERCLASS</h1></a>
+          </div>
+          <ul class="nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="katalog.html"
+                role="button"
+                aria-expanded="false"
+                >Kelas</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="katalog.html">Semua Kelas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Materi_AR.html"
+                    >Media Pembelajaran AR/VR</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Materi_Video.html">Video & Animasi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Materi_ASI.html"
+                    >Aplikasi Sistem Informasi</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Materi_UI.html">UI/UX Design</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Materi_Bisnis.html">Bisnis Digital</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Materi_PG.html"
+                    >Pengembangan Game</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Materi_Keamanan.html">Keamanan Siber</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Materi_AI.html">AI dan IOT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Materi_Pemrograman.html">Pemrograman</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="hasilkarya.html"
+                >Karya Siswa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="syarat.html">Syarat & Ketentuan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Panduan.html">Panduan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pertanyaan.html">FAQ</a>
+            </li>
+          </ul>
+          <div class="d-grid gap-1 d-md-flex justify-content-md-end">
+            <a href="login1.html"
+              ><button class="lgn-btn btn-primary" type="button" id="login">
+                Login/Sign Up
+              </button>
+            </a>
+          </div>
+        </nav>
+    </header>
+
+    <!-- LOGIN DAN SIGN UP -->
+    <div class="containerlgn" id="containerlgn">
+        <div class="signin-signup">
+            <form methood=POST action="profil.html" onSubmit="return validasi (this)" class="sign-in-form">
+                <h2 class="title">Login</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+                <div class="input-field">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="pass" placeholder="Password">
+                </div>
+                <input type="submit" value="Login" class="btnlgn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p id="message"></p>
+                <p class="account-text">Belum memiliki Akun? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+            <form method=POST action="profil.html" onSubmit="return validasi (this)" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" id="email" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Sign up" class="btnlgn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Sudah memiliki Akun? <a href="#" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="contentlgn">
+                    <h3>CODEMASTERCLASS!</h3>
+                    <p>e-course yang dirancang untuk mengajarkan
+                        pemrograman secara komprehensif</p>
+                    <button class="btnlgn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="login1.png" alt="" class="gambar">
+            </div>
+            <div class="panel right-panel">
+                <div class="contentlgn">
+                    <h3>CODEMASTERCLASS!</h3>
+                    <p>e-course yang dirancang untuk mengajarkan
+                        pemrograman secara komprehensif</p>
+                    <button class="btnlgn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="login3_1.png" alt="" class="gambar">
+            </div>
+        </div>
+    </div>
+
+    <script src="path/to/bootstrap.js"></script>
+    <script src="scriptHome.js"></script>
+    <script src="scriptLogin.js"></script>
+
+    
+    <script>
+      function validasi (form) {
+        if (form.username.value == "") {
+          alert ("Anda belum mengisikan Username?");
+          form.username.focus();
+          return (false); }
+
+        if (form.email.value == "") {
+          alert ("Anda belum mengisikan Email?");
+          form.email.focus();
+          return (false); }    
+          
+        if (form.password.value == "") {
+          alert ("Anda belum mengisikan Password?");
+          form.password.focus();
+          return (false); }
+                
+        return (true);
+      }
+    </script>
+
+</body>
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>Tentang Kami</h3>
+          <p>
+            "Code Masterclass" adalah e-course yang dirancang untuk mengajarkan
+            pemrograman secara komprehensif
+          </p>
+        </div>
+        <div class="footer-right">
+          <h3>Hubungi Kami</h3>
+          <p>Email: codemasterclass@e-course.com</p>
+          <p>Telepon: 123-456-7890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 E-Course Code Masterclass</p>
+      </div>
+    </div>
+  </footer>
+</html>
